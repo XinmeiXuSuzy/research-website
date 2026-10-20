@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>projects | Xinmei (Suzy) Xu</title>
+<meta name="description" content="Xinmei (Suzy) Xu — CS undergraduate at USC working on machine learning and research software for science (NASA/ESA Euclid).">
+<meta name="author" content="Xinmei (Suzy) Xu">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔭</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="assets/vendor/academicons/css/academicons.min.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<script src="assets/js/main.js"></script>
+</head>
+<body>
+<header class="navbar">
+  <div class="inner">
+    <a class="brand" href="index.html"><span class="first">Xinmei</span> (Suzy) Xu</a>
+    <nav style="display:flex;align-items:center">
+      <ul class="nav-links" id="nav-links"><li><a href="index.html" class="">about</a></li><li><a href="publications.html" class="">publications</a></li><li><a href="projects.html" class="active">projects</a></li><li><a href="cv.html" class="">cv</a></li></ul>
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+      <button class="icon-btn nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+  </div>
+</header>
+<main class="container">
+<div class="post-header">
+  <h1 class="post-title">projects</h1>
+  <p class="post-description">Research software for science, and systems I've built along the way.</p>
+</div>
+
+<h2 class="cat-title">research</h2>
+<div class="grid">
+<div class="card">
+  <div class="cover" style="background:linear-gradient(135deg,#1b1340 0%,#4b1c71 55%,#b509ac 100%)"><i class="fa-solid fa-meteor"></i></div>
+  <div class="card-body">
+    <h3><a href="https://arxiv.org/abs/2604.06648" target="_blank" rel="noopener">AgileLens</a></h3>
+    <p>Scalable CNN pipeline for strong gravitational lens discovery in Euclid imaging — data sourcing, cleaning, iterative VGG16 fine-tuning, candidate ranking and expert inspection. Found 130 new high-confidence lens candidates.</p>
+    <div class="tags"><span class="tag">TensorFlow</span><span class="tag">scikit-learn</span><span class="tag">VGG16</span><span class="tag">100 GB+</span></div>
+    <div class="meta" style="margin-top:0.75rem">Euclid · A&amp;A 2026</div>
+  </div>
+</div>
+<div class="card">
+  <div class="cover" style="background:linear-gradient(135deg,#0b2545 0%,#13315c 50%,#2698ba 100%)"><i class="fa-solid fa-satellite"></i></div>
+  <div class="card-body">
+    <h3>Astronomy research platform</h3>
+    <p>Full-stack platform combining pretrained CNNs, galaxy datasets, RAG and data-processing tools over 200 GB+ of data, with CPU parallelism and CUDA acceleration; sped up researchers' object-detection workflow by 30%.</p>
+    <div class="tags"><span class="tag">CUDA</span><span class="tag">RAG</span><span class="tag">Python</span></div>
+    <div class="meta" style="margin-top:0.75rem">Cooray Group</div>
+  </div>
+</div>
+<div class="card">
+  <div class="cover" style="background:linear-gradient(135deg,#1b1340 0%,#4b1c71 55%,#b509ac 100%)"><i class="fa-solid fa-crosshairs"></i></div>
+  <div class="card-body">
+    <h3>Image defect detection</h3>
+    <p>Sliding-window algorithm that flags corrupted Euclid images, improving rejection accuracy by ~20% over the default Euclid catalog filtering.</p>
+    <div class="tags"><span class="tag">Computer vision</span><span class="tag">NumPy</span></div>
+    <div class="meta" style="margin-top:0.75rem">Euclid</div>
+  </div>
+</div>
+<div class="card">
+  <div class="cover" style="background:linear-gradient(135deg,#0b2545 0%,#13315c 50%,#2698ba 100%)"><i class="fa-solid fa-pen-ruler"></i></div>
+  <div class="card-body">
+    <h3>Human-in-the-loop labeling tool</h3>
+    <p>Annotation and visualization tool for galaxy image labeling and large-scale candidate validation, enabling fast iteration between model predictions and expert review.</p>
+    <div class="tags"><span class="tag">HITL</span><span class="tag">Visualization</span></div>
+    <div class="meta" style="margin-top:0.75rem">Cooray Group</div>
+  </div>
+</div>
+<div class="card">
+  <div class="cover" style="background:linear-gradient(135deg,#243b55 0%,#141e30 100%)"><i class="fa-solid fa-database"></i></div>
+  <div class="card-body">
+    <h3>Galaxy-object database</h3>
+    <p>Searchable PostgreSQL + React database supporting CRUD and discovery workflows; cut manual data-retrieval time by 60%.</p>
+    <div class="tags"><span class="tag">PostgreSQL</span><span class="tag">React</span></div>
+    <div class="meta" style="margin-top:0.75rem">Cooray Group</div>
+  </div>
+</div>
+<div class="card">
+  <div class="cover" style="background:linear-gradient(135deg,#243b55 0%,#141e30 100%)"><i class="fa-solid fa-book-open"></i></div>
+  <div class="card-body">
+    <h3>Research-docs RAG assistant</h3>
+    <p>Natural-language retrieval over internal research documentation, plus reusable data-processing / training / plotting modules deployed for 20+ researchers at NASA, Caltech/JPL and the U.S. Euclid team.</p>
+    <div class="tags"><span class="tag">ChromaDB</span><span class="tag">RAG</span><span class="tag">Pandas</span><span class="tag">Matplotlib</span></div>
+    <div class="meta" style="margin-top:0.75rem">Cooray Group</div>
+  </div>
+</div>
+</div>
+
+<h2 class="cat-title">engineering</h2>
+<div class="grid">
+<div class="card">
+  <div class="cover" style="background:linear-gradient(135deg,#2c3e50 0%,#4ca1af 100%)"><i class="fa-solid fa-couch"></i></div>
+  <div class="card-body">
+    <h3>Philo Homes backend</h3>
+    <p>TypeScript/Node.js (Medusa v2) e-commerce backend for an AI room-design app; GCP → AWS migration cut cloud cost 40%, catalog sync went from 2 hours to 3 minutes, and OIDC-based CI/CD cut deploys from 30 to 5 minutes.</p>
+    <div class="tags"><span class="tag">Node.js</span><span class="tag">AWS</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span></div>
+    <div class="meta" style="margin-top:0.75rem">Internship · Summer 2026</div>
+  </div>
+</div>
+<div class="card">
+  <div class="cover" style="background:linear-gradient(135deg,#2c3e50 0%,#4ca1af 100%)"><i class="fa-solid fa-cart-shopping"></i></div>
+  <div class="card-body">
+    <h3>Distributed online shopping system</h3>
+    <p>Spring Boot / MyBatis / MySQL service with AWS SQS for burst traffic, Redis + Lua distributed locking and the TCC pattern to prevent overselling during flash sales; CI/CD on ECS with CDK and CodePipeline.</p>
+    <div class="tags"><span class="tag">Spring Boot</span><span class="tag">Redis</span><span class="tag">AWS SQS</span><span class="tag">ECS</span></div>
+    <div class="meta" style="margin-top:0.75rem">Sep 2025 – Feb 2026</div>
+  </div>
+</div>
+</div>
+
+</main>
+<footer>© Copyright 2026 Xinmei (Suzy) Xu. Last updated: October 2026.</footer>
+</body>
+</html>

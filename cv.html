@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>cv | Xinmei (Suzy) Xu</title>
+<meta name="description" content="Xinmei (Suzy) Xu — CS undergraduate at USC working on machine learning and research software for science (NASA/ESA Euclid).">
+<meta name="author" content="Xinmei (Suzy) Xu">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔭</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="assets/vendor/academicons/css/academicons.min.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<script src="assets/js/main.js"></script>
+</head>
+<body>
+<header class="navbar">
+  <div class="inner">
+    <a class="brand" href="index.html"><span class="first">Xinmei</span> (Suzy) Xu</a>
+    <nav style="display:flex;align-items:center">
+      <ul class="nav-links" id="nav-links"><li><a href="index.html" class="">about</a></li><li><a href="publications.html" class="">publications</a></li><li><a href="projects.html" class="">projects</a></li><li><a href="cv.html" class="active">cv</a></li></ul>
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+      <button class="icon-btn nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+  </div>
+</header>
+<main class="container">
+<div class="post-header">
+  <h1 class="post-title">cv</h1>
+  <p class="post-description">Last updated October 2026.</p>
+</div>
+<!-- <div class="cv-download"><a href="assets/pdf/Xinmei_Xu_CV.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i>&nbsp; PDF</a></div> -->
+
+<div class="cv-card"><h3>Education</h3>
+<div class="cv-item"><div class="cv-date"><span class="badge">2025 – 2028</span></div>
+<div class="cv-main"><div class="cv-title">University of Southern California</div><div class="cv-sub">B.S. in Computer Science · GPA 3.98 / 4.00 · Los Angeles, CA · expected May 2028</div><ul><li>Coursework: Machine Learning, Algorithms, Data Structures, Operating Systems, Software Development, Internetworking</li></ul></div></div>
+<div class="cv-item"><div class="cv-date"><span class="badge">2024</span></div>
+<div class="cv-main"><div class="cv-title">University of California, Irvine</div><div class="cv-sub">B.S. in Software Engineering (transferred to USC) · Irvine, CA</div></div></div>
+</div>
+
+<div class="cv-card"><h3>Research Experience</h3>
+<div class="cv-item"><div class="cv-date"><span class="badge">2024 – now</span></div>
+<div class="cv-main"><div class="cv-title">Undergraduate Researcher, Cooray Group — NASA Euclid Mission</div><div class="cv-sub">University of California, Irvine · Advisor: Prof. Asantha Cooray</div><div class="group">Scientific ML &amp; Computer Vision</div><ul><li>NASA-funded research for the ESA/NASA Euclid space telescope: deep CNNs for AI-driven strong gravitational lens identification in large-scale astronomical imaging.</li><li>Designed and built AgileLens, an end-to-end CV pipeline (TensorFlow, scikit-learn) over 100 GB+ of Euclid imaging: data sourcing, cleaning, preprocessing, iterative VGG16 fine-tuning, candidate ranking, and expert visual inspection.</li><li>Identified 130 previously unknown high-confidence strong-lens candidates (vs. ~1,000 known before Euclid); first-author paper in <em>Astronomy &amp; Astrophysics</em> (2026).</li><li>Designed a sliding-window defect-detection algorithm for corrupted Euclid images, improving rejection accuracy by ~20% over the default catalog filtering pipeline.</li></ul><div class="group">Research Software &amp; Tools for Scientists</div><ul><li>Human-in-the-loop annotation and visualization tool for galaxy image labeling and large-scale candidate validation.</li><li>Full-stack astronomy research platform integrating pretrained CNNs, galaxy datasets, RAG and data-processing tools; CPU parallelism and CUDA over 200 GB+ of data sped up object-detection workflow by 30%.</li><li>Searchable galaxy-object database (PostgreSQL + React), reducing manual data-retrieval time by 60%.</li><li>RAG assistant over internal research documentation (ChromaDB).</li><li>Reusable data-processing, training and visualization modules (NumPy, Pandas, Matplotlib) deployed for 20+ researchers at NASA, Caltech/JPL and the U.S. Euclid team.</li><li>Collaborate across the NASA Euclid Team and Euclid Consortium on publications, conference presentations and working-group discussions.</li></ul></div></div>
+</div>
+
+<div class="cv-card"><h3>Software Engineering Experience</h3>
+<div class="cv-item"><div class="cv-date"><span class="badge">Summer 2026</span></div>
+<div class="cv-main"><div class="cv-title">Software Engineering Intern, Backend</div><div class="cv-sub">Philo Homes (AI room-design startup) · Los Angeles, CA</div><ul><li>Built a TypeScript/Node.js e-commerce backend (Medusa v2) and migrated it from GCP to AWS (App Runner, RDS, S3, CloudFront), cutting cloud cost by 40% across 1,500+ SKUs.</li><li>Engineered a catalog sync pipeline from PostgreSQL with a custom MikroORM module for 3D/room-style metadata, cutting catalog updates from 2 hours to 3 minutes.</li><li>Developed admin REST APIs and a React portal with previewed CSV imports, bulk actions, and presigned direct-to-S3 uploads of 3D models served via CloudFront.</li><li>Set up GitHub Actions CI/CD building Docker images to ECR and App Runner with OIDC (no stored AWS keys), cutting deploy time from 30 to 5 minutes.</li></ul></div></div>
+</div>
+
+<div class="cv-card"><h3>Selected Projects</h3>
+<div class="cv-item"><div class="cv-date"><span class="badge">2025 – 2026</span></div>
+<div class="cv-main"><div class="cv-title">Distributed Online Shopping System</div><div class="cv-sub">Spring Boot · MyBatis · MySQL · Redis · AWS</div><ul><li>AWS SQS absorbs burst traffic as asynchronous jobs, improving throughput and stability under high concurrency.</li><li>Distributed locking with Redis + Lua and the Try-Confirm-Cancel (TCC) pattern for inventory lock / confirm / rollback, fully preventing overselling during flash sales.</li><li>Container CI/CD on AWS ECS with Docker, AWS CDK and CodePipeline, reducing deployment time by 30%.</li></ul></div></div>
+</div>
+
+<div class="cv-card"><h3>Publications &amp; Presentations</h3>
+<div style="padding:0 1.1rem"><ol class="bibliography">
+<li class="pub">
+  <div class="abbr"><span class="badge">A&amp;A</span></div>
+  <div class="body">
+    <div class="title">Euclid Quick Data Release (Q1). XLI. AgileLens: A scalable CNN-based pipeline for strong gravitational lens identification</div>
+    <div class="author"><em class="me">X. Xu</em>, R. Chen, T. Li, A. R. Cooray, S. Schuldt, J. A. Acevedo Barroso, D. Stern, D. Scott, M. Meneghetti, G. Despali, <i>et al.</i></div>
+    <div class="periodical"><em>Astronomy &amp; Astrophysics</em>, 712, A207, 2026<span class="note">· First author</span></div>
+    <div class="links"><a href="https://arxiv.org/abs/2604.06648" target="_blank" rel="noopener">arXiv</a><a href="https://arxiv.org/pdf/2604.06648" target="_blank" rel="noopener">PDF</a><a href="https://doi.org/10.1051/0004-6361/202660307" target="_blank" rel="noopener">DOI</a><button type="button" data-bib="bib-c1" aria-expanded="false">Bib</button></div>
+    <div class="bibtex" id="bib-c1">@article{xu2026agilelens,
+  title   = {Euclid Quick Data Release (Q1). XLI. AgileLens: A scalable
+             CNN-based pipeline for strong gravitational lens identification},
+  author  = {Xu, X. and Chen, R. and Li, T. and Cooray, A. R. and others},
+  journal = {Astronomy \&amp; Astrophysics},
+  volume  = {712},
+  pages   = {A207},
+  year    = {2026},
+  doi     = {10.1051/0004-6361/202660307},
+  eprint  = {2604.06648},
+  archivePrefix = {arXiv}
+}</div>
+  </div>
+</li>
+<li class="pub">
+  <div class="abbr"><span class="badge">ACE</span></div>
+  <div class="body">
+    <div class="title">A systematic review: Deep learning-based methods for pneumonia region detection</div>
+    <div class="author"><em class="me">X. Xu</em></div>
+    <div class="periodical"><em>Applied and Computational Engineering</em>, 22, 210–217, 2023<span class="note">· Sole author</span></div>
+    <div class="links"><button type="button" data-bib="bib-c2" aria-expanded="false">Bib</button></div>
+    <div class="bibtex" id="bib-c2">@article{xu2023pneumonia,
+  title   = {A systematic review: Deep learning-based methods for
+             pneumonia region detection},
+  author  = {Xu, X.},
+  journal = {Applied and Computational Engineering},
+  volume  = {22},
+  pages   = {210--217},
+  year    = {2023}
+}</div>
+  </div>
+</li>
+<li class="pub">
+  <div class="abbr"><span class="badge alt">arXiv</span></div>
+  <div class="body">
+    <div class="title">Euclid Quick Data Release (Q1). The Strong Lensing Discovery Engine F – Bright and low-redshift strong lenses</div>
+    <div class="author">L. R. Ecker, M. Fabricius, S. Seitz, R. Saglia, N. E. P. Lines, P. Holloway, T. Li, A. Verma, F. Balzer, Q. Jin, <i>et al.</i> (incl. <em class="me">X. Xu</em>)</div>
+    <div class="periodical">arXiv:2603.28580, 2026<span class="note">· Euclid Consortium collaboration</span></div>
+    <div class="links"><a href="https://arxiv.org/abs/2603.28580" target="_blank" rel="noopener">arXiv</a><a href="https://arxiv.org/pdf/2603.28580" target="_blank" rel="noopener">PDF</a><button type="button" data-bib="bib-c3" aria-expanded="false">Bib</button></div>
+    <div class="bibtex" id="bib-c3">@article{ecker2026sldef,
+  title   = {Euclid Quick Data Release (Q1). The Strong Lensing Discovery
+             Engine F -- Bright and low-redshift strong lenses},
+  author  = {Ecker, L. R. and Fabricius, M. and Seitz, S. and others},
+  journal = {arXiv preprint arXiv:2603.28580},
+  year    = {2026}
+}</div>
+  </div>
+</li>
+<li class="pub">
+  <div class="abbr"><span class="badge alt">AAS</span></div>
+  <div class="body">
+    <div class="title">AgileLens: A Scalable CNN-based Pipeline for Strong Gravitational Lens Identification in Euclid</div>
+    <div class="author"><em class="me">X. Xu</em>, R. Chen, T. Li, A. Cooray</div>
+    <div class="periodical"><em>American Astronomical Society Meeting Abstracts</em>, Vol. 247, 319.07, 2026<span class="note">· Poster</span></div>
+    <div class="links"><button type="button" data-bib="bib-c4" aria-expanded="false">Bib</button></div>
+    <div class="bibtex" id="bib-c4">@inproceedings{xu2026aas,
+  title     = {AgileLens: A Scalable CNN-based Pipeline for Strong
+               Gravitational Lens Identification in Euclid},
+  author    = {Xu, X. and Chen, R. and Li, T. and Cooray, A.},
+  booktitle = {American Astronomical Society Meeting Abstracts},
+  volume    = {247},
+  pages     = {319.07},
+  year      = {2026}
+}</div>
+  </div>
+</li>
+</ol></div>
+<div class="cv-item"><div class="cv-date"><span class="badge">2026</span></div>
+<div class="cv-main"><div class="cv-title">Poster — 247th Meeting of the American Astronomical Society</div><div class="cv-sub">AAS 247</div></div></div>
+<div class="cv-item"><div class="cv-date"><span class="badge">2025</span></div>
+<div class="cv-main"><div class="cv-title">Research talk — NASA Euclid U.S. Team</div><div class="cv-sub">California Institute of Technology (Caltech)</div></div></div>
+</div>
+
+<div class="cv-card"><h3>Professional Affiliations</h3>
+<div class="cv-item"><div class="cv-date"><span class="badge">2025 – now</span></div>
+<div class="cv-main"><div class="cv-title">Euclid Consortium</div><div class="cv-sub">Science Working Group: Strong Lensing</div></div></div>
+<div class="cv-item"><div class="cv-date"><span class="badge">2025 – now</span></div>
+<div class="cv-main"><div class="cv-title">NASA Euclid Team</div><div class="cv-sub"></div></div></div>
+</div>
+
+<div class="cv-card"><h3>Technical Skills</h3>
+<dl class="skills">
+  <dt>Programming</dt><dd>Python, C/C++, TypeScript, JavaScript, Java, SQL, MATLAB, R, Lua</dd>
+  <dt>ML &amp; AI</dt><dd>PyTorch, TensorFlow, scikit-learn, OpenCV, LangGraph, LangChain, Anthropic SDK, RAG, MCP, ChromaDB</dd>
+  <dt>Scientific Computing</dt><dd>NumPy, Pandas, Astropy, Matplotlib, CUDA, CPU parallel computing, Linux</dd>
+  <dt>Systems &amp; Infra</dt><dd>React, Node.js, Flask, Spring Boot, PostgreSQL, MySQL, Redis, Docker, GitHub Actions, AWS (ECS, App Runner, RDS, S3, CloudFront, SQS, CDK, CodePipeline)</dd>
+  <dt>Languages</dt><dd>Chinese (native), English (professional)</dd>
+</dl>
+</div>
+
+</main>
+<footer>© Copyright 2026 Xinmei (Suzy) Xu. Last updated: October 2026.</footer>
+</body>
+</html>
